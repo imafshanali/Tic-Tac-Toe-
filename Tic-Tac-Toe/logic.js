@@ -1,6 +1,6 @@
 let boxes = document.querySelectorAll(".box");
 let resetbtn = document.querySelector("#reset");
-
+let txtContainer = document.querySelector(".txtContainer")
 let TurnO = true;
 
 let WinningPattern = [
