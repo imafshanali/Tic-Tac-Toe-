@@ -16,7 +16,7 @@ Prerequisites
 To run this game, you only need a modern web browser.
 
 Installation
-git clone https://github.com/your-username/tic-tac-toe.git
+git clone https://github.com/imafshanali/tic-tac-toe.git
 
 Navigate to the project directory:
 cd tic-tac-toe
