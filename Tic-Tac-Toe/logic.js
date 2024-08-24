@@ -52,6 +52,12 @@ const displayWinner = (Winner) => {
     disablebtn();
 };
 
+const displayDraw = () => {
+    msg.innerText = "It's a Draw!";
+    txtContainer.classList.remove("chappak");
+    disablebtn();
+};
+
 const checkWinner = () => {
     for (let pattern of WinningPattern) {
         pat1 = boxes[pattern[0]].innerText;
@@ -65,5 +71,16 @@ const checkWinner = () => {
         }
     }
 }
+
+let filledBoxes = boxes;
+boxes.forEach((box) => {
+    if (box.innerText !== "") {
+        filledBoxes++;
+    }
+});
+
+if (filledBoxes === 9) {
+    displayDraw();
+};
 
 resetbtn.addEventListener("click", resetGame);
